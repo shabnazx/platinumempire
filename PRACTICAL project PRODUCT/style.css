@@ -1,0 +1,330 @@
+  @import url('https://fonts.googleapis.com/css?family=Bitter');
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }      /* this targets eveything without the need of adding and borders*/
+
+       /*css for the navigation*/
+  body {margin:0;}
+  ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  opacity: 0.9;
+  }
+
+  ul.topnav li {
+  display:inline-flex;  /* this gives equal space around the navigation*/
+  }
+
+  ul.topnav li a {
+  display: inline-block;
+  color: #b2d91c;
+  text-align: center;
+  padding: 18px 45px;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-family: 'Bitter', serif;
+  font-style: normal;
+  }
+  ul.topnav li a:hover {background-color: #555;}
+
+
+  .skipnav {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;          /* this Hides the skip nav*/
+  }
+
+  .container {               /*keeps the page in that width*/
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
+   }
+/*for the banner image*/
+  .banner {
+  width:100%;
+  display:block;
+  }
+
+  .banner > .banner-image {
+  width:100%;
+  display:block;
+  }
+
+  header h1 {
+  font-size: 2em;
+  color: #b2d91c;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  }
+  h2 {
+  font-size: 2em;
+  color: #b2d91c;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  }
+
+  h3 {
+  font-size: 1.5em;
+  color: #000;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  }
+
+  h4 {
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  }
+
+ p {
+  color: #000;
+  text-align: center;
+  font-family: 'Bitter', serif;
+ }
+                               /* the footer*/
+  .footer-basic-centered{
+  background-color: #000000;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.7;
+  font-family: 'Bitter', serif;
+  padding: 10px;
+  margin-top: 50px;
+  float: left;
+  }
+
+  .footer-basic-centered p {
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+  }
+
+  .flexboxfooter2 {                        /*this makes the icon on the footer go across*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content:center;
+  }
+
+  /*flex box for footer */
+ .footer4 {
+  display: flex;
+  margin:10px;
+ }
+
+ .footer5 {
+ display: flex;
+ margin:10px;
+ }
+
+ .footer6 {
+ display: flex;
+ margin:10px;
+ }
+
+      /*flex box on homepage*/
+ .flexbox {                        /*this makes the box go across*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: space-between;
+  justify-content:center;
+  }
+
+ .green1 {
+  flex: 1;
+  background: #b2d91c;
+  padding:4% 2%;
+        }
+
+ .grey2 {
+  flex: 1;
+  background: #eeeeee;
+  padding:4% 2%;
+       }
+
+ .green3 {
+  flex: 1;
+  background: #b2d91c;
+  padding:4% 2%;
+      }
+
+  /*gallery page */
+  .carboxes{                        /*this makes the image go across and underneath*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content:space-around;
+  }
+
+  .box{
+  position: relative;
+  margin-bottom: 10px;
+  }
+
+  .wp-caption {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  }
+
+ .wp-caption-text {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  padding: 0.75em 1em;
+  font-weight: 700;
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.7);
+ }
+
+ .wp-caption:hover .wp-caption-text {
+  opacity: 1;
+  }
+ /* LARGE IMAGES */
+ .box5 img {
+     width: 86%;
+ }
+
+ .box6 img {
+     width: 86%;
+     height: auto;
+ }
+
+ .wp-caption-large {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  }
+
+.wp-caption-text-large {
+  opacity: 0;
+  position: absolute;
+  width: 86%;
+  color: #fff;
+  left: 7%;
+  bottom: 0;
+  padding: 0.75em 1em;
+  font-weight: 700;
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.7);
+  }
+
+  .wp-caption-large:hover .wp-caption-text-large {
+  opacity: 1;
+  }
+
+
+   /* frequently asked questions*/
+  dt {
+      font-family: 'Bitter', serif;
+      color:#3e3f3d;
+      font-size: 1.3em;
+      line-height: 150%;
+      padding: 1rem 0 0.5rem 0;
+      }
+
+  dd {
+      font-family: 'Bitter', serif;
+    }
+
+
+
+
+
+    /* CONTACT */
+    /*moves the text across*/
+      .contactpage{
+        padding-left: 30px;
+       }
+
+        form {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8em;
+        font-family: 'Bitter', serif;
+        padding: 1em;
+        margin-bottom: 15px;
+        width: 50%;
+        text-align: left;
+        }
+
+        input, textarea {                       /*css for the form boxes*/
+        font-size: 0.8em;
+        font-family: 'Bitter', serif;
+        border: 1px solid #ddd;
+        background: #fff;
+        padding: 1em;
+        margin-bottom: 15px;
+        transition: all 0.3s ease-in-out;
+        }
+
+        .flex-container{       /*makes the contact form across the page*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+
+        button, a.button {                   /*css for the form button*/
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 2px solid #b2d91c;
+        color: #333;
+        background: transparent;
+        line-height: 1em;
+        padding: 0.6em 0.9em;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+        }
+
+
+        img{                       /*for the icons on the contact page*/
+        display: block;
+        margin:auto;
+        }
+
+
+/*hyperlink colours*/
+        a:visited {
+        color: #00e64d;
+        }
+        a:link {
+        color: #ff0066;
+        }
+
+/* MEDIA QUERIES */
+
+
+     @media screen and (min-width: 450px) {
+
+    .flexbox {
+    flex-direction: row;
+    }
+    }
